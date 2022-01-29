@@ -1,7 +1,6 @@
 import Index from '../pages/Index'
 import Show from '../pages/Show'
 import Form from './Form'
-
 import { Route,Switch } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 
