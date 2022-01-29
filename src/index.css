@@ -7,7 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Bookshelf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color:  #63674E;
+  height: 700px;
+  width: 500px;
+  margin: auto;
+  padding: 10px 10 10 10 ;
+
 }
+
+

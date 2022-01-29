@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
 
 const Index = (props) => {
+    console.log(props.book)
     const loaded = () => {
         return (
             <div>
-                {props.books.map((b)=>{
+                {props.book.map((b)=>{
                     return(
                         <Link key={b._id} to = {`/bookshelf/${b._id}`}>
                             <div>
-                                {b.name}
+                                {b.title}
                             </div>
                         </Link>
                     )
