@@ -14,7 +14,10 @@ const getBook = async () => {
     const data = await response.json();
     setBook(data);
 
-
+    
+    useEffect(()=>{
+        getBook()
+    }, [])
 return (
     <main>
         <Switch>
