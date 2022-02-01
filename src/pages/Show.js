@@ -3,9 +3,7 @@ const Show = props => {
     const book= props.book.find((b)=>b._id === id)
 
     console.log("hello world", book)
-const handleClick = () => {
-    props.history.push('/')
-}
+
 
 return <div>
     <h1>{book.title}</h1>
