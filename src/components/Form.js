@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 
 const Form = (props) => {
-    const url = props.edit.isEditing ? `http://localhost:3001/bookshelf/${props.edit.bookToEdit._id}` : 'http://localhost:3001/bookshelf'
+    const url = props.edit.isEditing ? `https://trinitys-library.herokuapp.com/bookshelf/${props.edit.bookToEdit._id}` : 'https://trinitys-library.herokuapp.com/bookshelf/bookshelf'
     const [ form, setForm ] = useState ({title:'', author:'', image:''})
     const history = useHistory();
     const handleChange=(evt)=>{
