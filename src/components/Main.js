@@ -12,7 +12,7 @@ const Main = (props) => {
         bookToEdit:null,
     })
 
-    const url = 'http://localhost:3001/bookshelf'
+    const url = 'https://trinitys-library.herokuapp.com/bookshelf/'
 
 const getBook = async () => {
     const response = await fetch(url);
