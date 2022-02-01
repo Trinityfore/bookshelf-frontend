@@ -11,7 +11,7 @@ return <div>
     <h1>{book.title}</h1>
     <h2>{book.author}</h2>
     {book.image && <img alt={book.title} src={book.image}/>}
-    <button onClick= {handleClick}>Delete</button>
+    <button onClick={()=>props.deleteBook(book._id)}>Delete</button>
         <button onClick = {()=>props.handleEdit(book._id)}>Edit</button>
 </div>
 

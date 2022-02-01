@@ -35,9 +35,9 @@ const Form = (props) => {
 
     return(
         <form onSubmit={handleSubmit}>
-        <input name="title" onChange={handleChange} value={form.title}/>
-        <input name="author" onChange={handleChange} value={form.author}/>
-        <input name="image" onChange={handleChange} value={form.image}/>
+        <input name="title" placeholder='title' onChange={handleChange} value={form.title}/>
+        <input name="author" placeholder='author' onChange={handleChange} value={form.author}/>
+        <input name="image" placeholder='image url' onChange={handleChange} value={form.image}/>
         <button type="submit">Submit</button>
         </form> 
 
